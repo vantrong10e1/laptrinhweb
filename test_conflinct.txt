@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 test_conflinct.txt in test_conflinct
+=======
+test_conflinct.txt in main
+>>>>>>> main
