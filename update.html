@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình web - Cập nhật</title>
+    <style>
+        /* Thiết lập cơ bản */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Khung trình duyệt giả lập */
+        .wrapper {
+            width: 100%;
+            max-width: 900px;
+            background-color: #fff;
+            border: 1px solid #999;
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Thanh điều hướng Header */
+        .nav-bar {
+            border: 1px solid #000;
+            margin: 20px 40px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 5px;
+        }
+
+        /* Vùng nội dung chính */
+        .main-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung Form Cập nhật */
+        .update-box {
+            border: 1px solid #999;
+            padding: 40px 50px;
+            width: 480px;
+            text-align: center;
+        }
+
+        .update-box h2 {
+            margin-bottom: 30px;
+            font-weight: normal;
+            font-size: 22px;
+        }
+
+        /* Từng dòng nhập liệu */
+        .input-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .input-row label {
+            width: 120px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .input-row input {
+            flex: 1;
+            padding: 6px 10px;
+            border: 1px solid #000;
+            text-align: center;
+            /* Chữ xxx nằm giữa như trong ảnh */
+            outline: none;
+        }
+
+        /* Nút và link */
+        .button-row {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 120px;
+        }
+
+        .link-back {
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 13px;
+            margin-right: 20px;
+        }
+
+        .btn-update {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-update:hover {
+            background-color: #004494;
+        }
+
+        /* Chân trang */
+        .footer-line {
+            border: 1px solid #000;
+            margin: 20px 40px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="nav-bar">
+            <a href="#">Home</a> |
+            <a href="#">Đăng nhập</a> |
+            <a href="#">Đăng ký</a>
+        </div>
+
+        <div class="main-container">
+            <div class="update-box">
+                <h2>Màn hình cập nhật</h2>
+
+                <form action="#">
+                    <div class="input-row">
+                        <label>Username</label>
+                        <input type="text" value="xxx">
+                    </div>
+
+                    <div class="input-row">
+                        <label>Mật khẩu</label>
+                        <input type="password" value="xxx">
+                    </div>
+
+                    <div class="input-row">
+                        <label>Nhập lại mật khẩu</label>
+                        <input type="password" value="xxx">
+                    </div>
+
+                    <div class="input-row">
+                        <label>Email</label>
+                        <input type="email" value="xxx">
+                    </div>
+
+                    <div class="button-row">
+                        <a href="#" class="link-back">Đã có tài khoản</a>
+                        <button type="submit" class="btn-update">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-line">
+            Lập trình web @01/2024
+        </div>
+    </div>
+
+</body>
+
+</html>
